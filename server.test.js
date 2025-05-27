@@ -1,6 +1,5 @@
 const request = require('supertest');
 const app = require('./server');
-
 describe('To-Do API Tests', () => {
     test('GET /todos should return an array', async () => {
         const res = await request(app).get('/todos');
